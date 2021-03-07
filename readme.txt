@@ -1,21 +1,17 @@
-Name: Kirtan Amitkumar Jha
-SFSU id: 920392093
+Kirtan Amitkumar Jha
+920392093
 
-Q1: I used stack function for solving DFS algorithm and used psuedocode's algorithm taught in class for developing logic
+Q1 I am using the following parameters as a grading policy. 
+1. manhattan distance between food and pacman
+the minimum distance between pacman and food will be used for scoring as this distance is inversely proportional to better chance of winning
 
-Q2: I used queue function for solving BFS algorithm and used psuedocode's algorithm taught in class for developing logic
+2. manhattan distance pacman and ghost
+the minimum distance between pacman and ghost will be used for scoring as this distance is directly proportional to better chance of winning
+I am using average of ghost distances
 
-Q3: I used priorityOueue for solving UCS and added one extra codition of stepcost in triples to get the cost of each state which was taught in the class
+3. If distance between ghost and pacman is less than 2 units than pacman is very unlikely to win so this possibility must be assigned very low priority
 
-Q4: I used the same priorityqueue data structure and added heuristics function for adding the previous costs
-
-Q5: I initialized all corners, updated values of coordinates of pacman. checked first if pacman is not in the direction of wall. If not, then I checked the successor state. If the successor state is corner then update value to true. I iterated this till each corner is not found.
-
-Q6: 
-
-Q7: For this, I calculated manhattan distance from the node to all corners. Then, calculated minimum distance from the corners to next state and removed it from the remaining corners. I repeated this method for next iterations.
-
-Q8: I just called the breadthfirstsearch function 
-
-I spent atmost 15 to 17 hours for question fifth, sixth, and seventh (developing logics and algorithms) and on rest of the questions I spent 6-8 hours. It took more than normal time for me to understand the questions.
- 
+Q2
+Q3
+Q4
+Q5 I tried to use the same algo of question 1 by changing the state to current from successor but could not pass through the autograder.
